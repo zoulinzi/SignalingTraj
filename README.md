@@ -1,10 +1,8 @@
-# Diff-RNTraj
-Source code of TKDE: Diff-RNTraj: A Structure-aware Diffusion Model for Road Network-constrained Trajectory Generation
+# SignalingTraj
+
 
 # Training:
-  Running the following command to train Diff-RNTraj.
-  
-  **Porto dataset:**     python multi_main.py --dataset Porto --diff_T 500 --pre_trained_dim 64 --rdcl 10
+  Running the following command to train SignalingTraj.
   
   **Chengdu dataset:**     python multi_main.py --dataset Chengdu --diff_T 500 --pre_trained_dim 64 --rdcl 10
   
@@ -15,9 +13,7 @@ Source code of TKDE: Diff-RNTraj: A Structure-aware Diffusion Model for Road Net
   **operator3 dataset:**     python multi_main.py --dataset operator3 --embed_mode vgae --diff_T 500 --pre_trained_dim 64 --rdcl 10
 
 # Generate data:
-  After training the Diff-RNTraj, run the following command to generate the road network-constrained trajectory.
-  
-  **Porto dataset:**     python generate_data.py --dataset Porto --diff_T 500 --pre_trained_dim 64 --rdcl 10
+  After training the SignalingTraj, run the following command to generate the road network-constrained trajectory.
 
   **Chengdu dataset:**     python generate_data.py --dataset Chengdu --diff_T 500 --pre_trained_dim 64 --rdcl 10
   
@@ -26,10 +22,3 @@ Source code of TKDE: Diff-RNTraj: A Structure-aware Diffusion Model for Road Net
   **operator1 dataset:**     python generate_data.py --dataset operator1 --embed_mode vgae --diff_T 500 --pre_trained_dim 64 --rdcl 10
   
   **operator3 dataset:**     python generate_data.py --dataset operator3 --embed_mode vgae --diff_T 500 --pre_trained_dim 64 --rdcl 10
-
-
-
-# Generated Sample:
-   Our generated trajectories on the Chengdu and Porto datasets in the path of **./generate_data**.
-
-The processed dataset is available at https://drive.google.com/drive/folders/1TvotDt8wyZIJZg87_sBvYIi5wQVSO0OB?usp=drive_link
